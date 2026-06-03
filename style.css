@@ -77,12 +77,12 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 2.5rem 1rem 2.5rem 5%;
+  padding: 2.5rem 1rem 2.5rem 2.5%;
   padding-right: 1rem !important;
 }
 
 .header-container {
-  max-width: 1300px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -180,7 +180,7 @@ body {
 
 .hero-section {
   width: 100%;
-  padding: 10rem 1rem 2.5rem 5%;
+  padding: 10rem 1rem 2.5rem 2.5%;
   padding-right: 1rem !important;
   display: flex;
   align-items: center;
@@ -189,7 +189,7 @@ body {
 }
 
 .hero-container {
-  max-width: 1300px;
+  max-width: 1600px;
   margin: 0 auto;
   width: 100%;
   display: grid;
@@ -501,12 +501,12 @@ body {
 
 @media (max-width: 1024px) {
   .main-header {
-    padding: 1.5rem 1rem 1.5rem 5%;
+    padding: 1.5rem 1rem 1.5rem 2.5%;
     padding-right: 1rem !important;
   }
   
   .hero-section {
-    padding: 8rem 1rem 2.5rem 5%;
+    padding: 8rem 1rem 2.5rem 2.5%;
     padding-right: 1rem !important;
   }
 
