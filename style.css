@@ -1,6 +1,5 @@
-/* ==========================================================================
-   GATHSESSION PREMIUM DESIGN SYSTEM
-   ========================================================================== */
+
+/* GATHSESSION PREMIUM DESIGN SYSTEM */
 
 /* Custom Core Properties (CSS Variables) */
 :root {
@@ -40,24 +39,6 @@ body {
   font-family: var(--font-sans);
   overflow-x: hidden;
   line-height: 1.5;
-}
-
-/* Custom Scrollbar for Premium Feel */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-color);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-pink);
 }
 
 /* Main Layout Wrapper */
@@ -180,7 +161,7 @@ body {
 
 .hero-section {
   width: 100%;
-  padding: 11rem 1rem 2.5rem 10.5%;
+  padding: 11rem 1rem 3.5rem 10.5%;
   padding-right: 1rem !important;
   display: flex;
   align-items: center;
@@ -259,7 +240,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  margin-bottom: 5.5rem;
+  margin-bottom: 4.5rem;
 }
 
 .btn-primary {
@@ -315,7 +296,7 @@ body {
 .features-row-container {
   display: flex;
   gap: 3.2rem;
-  padding-top: 2.8rem;
+  padding-top: 1.9rem;
 }
 
 .feature-card-item {
@@ -325,7 +306,7 @@ body {
   cursor: pointer;
 }
 
-..feature-icon-wrapper {
+.feature-icon-wrapper {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 12px;
@@ -413,7 +394,7 @@ body {
   z-index: 2;
 }
 
-/* Common Portrait Card Styling */
+/* Portrait Card Styling */
 .portrait-capsule,
 .portrait-circle {
   position: absolute;
@@ -435,7 +416,7 @@ body {
   display: block;
 }
 
-/* Portrait 1: Beanie Man (Capsule, Left-Top) */
+/* Portrait 1: Beanie Man */
 .portrait-beanie {
   width: 215px;
   aspect-ratio: 240 / 509;
@@ -444,7 +425,7 @@ body {
   z-index: 3;
 }
 
-/* Portrait 2: Asian Woman (Circle with sharp bottom-left, Top-Middle) */
+/* Portrait 2: Asian Woman */
 .portrait-asian {
   width: 215px;
   aspect-ratio: 1 / 1;
@@ -453,7 +434,7 @@ body {
   z-index: 4;
 }
 
-/* Portrait 3: Redhead Woman (Circle with sharp bottom-left, Bottom-Left) */
+/* Portrait 3: Redhead Woman */
 .portrait-redhead {
   width: 215px;
   aspect-ratio: 1 / 1;
@@ -462,7 +443,7 @@ body {
   z-index: 5;
 }
 
-/* Portrait 4: Smiling Man (Capsule, Middle-Right) */
+/* Portrait 4: Smiling Man */
 .portrait-smiling {
   width: 215px;
   aspect-ratio: 240 / 509;
@@ -471,7 +452,7 @@ body {
   z-index: 6;
 }
 
-/* Portrait 5: Turban Woman (Capsule, Far-Right) */
+/* Portrait 5: Turban Woman */
 .portrait-turban {
   width: 215px;
   aspect-ratio: 240 / 509;
