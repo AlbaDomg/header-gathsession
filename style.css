@@ -77,16 +77,22 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 2.5rem 1rem 2.5rem 2.5%;
+  padding: 2.5rem 1rem 2.5rem 10.5%;
   padding-right: 1rem !important;
 }
 
 .header-container {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 3.5rem;
+}
+
+.navigation-menu {
+  display: block;
+  margin-left: auto;
 }
 
 /* Logo Composition */
@@ -94,11 +100,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-.logo-wrapper:hover {
-  opacity: 0.9;
+  margin-left: 7rem;
 }
 
 .logo-gath-part {
@@ -127,13 +129,13 @@ body {
 
 /* Navigation Menu */
 .navigation-menu {
-  display: block;
+  margin-left: 38%;
 }
 
 .nav-list {
   display: flex;
   list-style: none;
-  gap: 2.8rem;
+  gap: 2.3rem;
   align-items: center;
 }
 
@@ -145,10 +147,9 @@ body {
   color: var(--nav-item-color);
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   text-decoration: none;
   padding: 0.5rem 0;
-  transition: color 0.3s ease;
   letter-spacing: 0.3px;
 }
 
@@ -160,11 +161,10 @@ body {
 /* Indicator line under Home */
 .nav-active-line {
   position: absolute;
-  bottom: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 15px;
-  height: 3px;
+  bottom: -23px;
+  left: 0%;
+  width: 40px;
+  height: 15px;
   object-fit: contain;
   pointer-events: none;
 }
@@ -180,7 +180,7 @@ body {
 
 .hero-section {
   width: 100%;
-  padding: 10rem 1rem 2.5rem 2.5%;
+  padding: 11rem 1rem 2.5rem 10.5%;
   padding-right: 1rem !important;
   display: flex;
   align-items: center;
@@ -189,12 +189,12 @@ body {
 }
 
 .hero-container {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto;
   width: 100%;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 5rem;
+  grid-template-columns: 0.55fr 1.45fr;
+  gap: 5.5rem;
   align-items: center;
 }
 
@@ -202,25 +202,55 @@ body {
 .hero-info-column {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 7rem;
+  max-width: 680px;
 }
 
 .hero-title {
-  font-family: var(--font-serif);
-  font-size: 4.3rem;
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 4.6rem;
   font-weight: 500;
-  line-height: 1.12;
+  line-height: 1.2;
   color: var(--text-primary);
   margin-bottom: 1.8rem;
   letter-spacing: -1px;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.hero-title span {
+  display: inline-block;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+#main-headline {
+  font-family: 'Merriweather', Georgia, serif;
+  white-space: normal ;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.hero-title br,
+#main-headline br {
+  display: block;
+  content: '';
+  margin: 0;
 }
 
 .hero-subtitle {
   font-family: var(--font-sans);
-  font-size: 1.12rem;
+  font-size: 1.60rem;
   color: var(--text-secondary);
-  line-height: 1.68;
+  line-height: 1.55;
   margin-bottom: 3.5rem;
-  max-width: 490px;
+  max-width: 680px;
   font-weight: 300;
 }
 
@@ -228,7 +258,7 @@ body {
 .hero-action-buttons {
   display: flex;
   align-items: center;
-  gap: 2.2rem;
+  gap: 2.5rem;
   margin-bottom: 5.5rem;
 }
 
@@ -236,24 +266,18 @@ body {
   background-color: var(--accent-pink);
   color: var(--text-primary);
   border: none;
-  padding: 1.15rem 2.6rem;
+  padding: 1.25rem 3rem;
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 10px 10px 10px 0;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(230, 57, 112, 0.25);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: none;
 }
 
 .btn-primary:hover {
   background-color: var(--accent-pink-hover);
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(230, 57, 112, 0.45);
-}
-
-.btn-primary:active {
-  transform: translateY(-1px);
+  box-shadow: none;
 }
 
 .btn-link {
@@ -263,37 +287,28 @@ body {
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
+  padding: 0.4rem 0;
+}
+
+.btn-link-text {
+  display: inline-flex;
   position: relative;
 }
 
-.btn-link::after {
+.btn-link-text::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0.1rem;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: var(--text-primary);
-  transform: scaleX(0.7);
-  transform-origin: left;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn-link:hover::after {
-  transform: scaleX(1);
 }
 
 .link-arrow {
   color: var(--text-primary);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn-link:hover .link-arrow {
-  transform: translateX(6px);
 }
 
 /* Features Highlight Grid */
@@ -310,7 +325,7 @@ body {
   cursor: pointer;
 }
 
-.feature-icon-wrapper {
+..feature-icon-wrapper {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 12px;
@@ -320,12 +335,7 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-  transition: all 0.3s ease;
-}
-
-.feature-card-item:hover .feature-icon-wrapper {
-  background-color: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.18);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .feature-icon-img {
@@ -377,7 +387,6 @@ body {
   pointer-events: none;
   opacity: 0.85;
   filter: brightness(2);
-  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .curve-one {
@@ -392,15 +401,15 @@ body {
   width: 95%;
   height: 95%;
   bottom: -30%;
-  left: 25%;
+  left: 17%;
   object-fit: contain;
 }
 
 /* Collage Holder */
 .portraits-collage-grid {
   position: relative;
-  width: 560px;
-  height: 550px;
+  width: 640px;
+  height: 640px;
   z-index: 2;
 }
 
@@ -410,7 +419,6 @@ body {
   position: absolute;
   cursor: pointer;
   filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.35));
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .portrait-inner {
@@ -425,64 +433,50 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Collage Hover States */
-.portrait-capsule:hover,
-.portrait-circle:hover {
-  transform: translateY(-8px) scale(1.03);
-  z-index: 20 !important;
-  filter: drop-shadow(0 20px 36px rgba(0, 0, 0, 0.55));
-}
-
-.portrait-capsule:hover .portrait-img,
-.portrait-circle:hover .portrait-img {
-  transform: scale(1.06);
 }
 
 /* Portrait 1: Beanie Man (Capsule, Left-Top) */
 .portrait-beanie {
-  width: 190px;
+  width: 215px;
   aspect-ratio: 240 / 509;
-  top: -80px;
-  left: -80px;
+  top: -60px;
+  left: -90px;
   z-index: 3;
 }
 
 /* Portrait 2: Asian Woman (Circle with sharp bottom-left, Top-Middle) */
 .portrait-asian {
-  width: 190px;
+  width: 215px;
   aspect-ratio: 1 / 1;
-  top: -80px;
-  left: 150px;
+  top: -60px;
+  left: 170px;
   z-index: 4;
 }
 
 /* Portrait 3: Redhead Woman (Circle with sharp bottom-left, Bottom-Left) */
 .portrait-redhead {
-  width: 190px;
+  width: 215px;
   aspect-ratio: 1 / 1;
-  top: 360px;
-  left: -80px;
+  top: 430px;
+  left: -90px;
   z-index: 5;
 }
 
 /* Portrait 4: Smiling Man (Capsule, Middle-Right) */
 .portrait-smiling {
-  width: 190px;
+  width: 215px;
   aspect-ratio: 240 / 509;
-  top: 150px;
-  left: 150px;
+  top: 180px;
+  left: 170px;
   z-index: 6;
 }
 
 /* Portrait 5: Turban Woman (Capsule, Far-Right) */
 .portrait-turban {
-  width: 190px;
+  width: 215px;
   aspect-ratio: 240 / 509;
-  top: -2px;
-  left: 375px;
+  top: 60px;
+  left: 430px;
   z-index: 7;
 }
 
@@ -501,23 +495,23 @@ body {
 
 @media (max-width: 1024px) {
   .main-header {
-    padding: 1.5rem 1rem 1.5rem 2.5%;
+    padding: 1.5rem 1rem 1.5rem 1%;
     padding-right: 1rem !important;
   }
   
   .hero-section {
-    padding: 8rem 1rem 2.5rem 2.5%;
+    padding: 8rem 1rem 2.5rem 1%;
     padding-right: 1rem !important;
   }
 
   .hero-container {
     grid-template-columns: 1fr;
     gap: 4.5rem;
-    text-align: center;
+    text-align: left;
   }
 
   .hero-info-column {
-    align-items: center;
+    align-items: flex-start;
   }
 
   .hero-subtitle {
@@ -541,6 +535,10 @@ body {
   .hero-title {
     font-size: 3.2rem;
     letter-spacing: -1px;
+  }
+
+  .hero-title span {
+    white-space: normal;
   }
 
   .hero-visual-column {

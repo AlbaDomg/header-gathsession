@@ -3,27 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Meta Tags -->
-  <title>GathSession - Build your best community starting from here</title>
-  <meta name="description" content="Meet and communicate with the best people to run projects, events or other activities in a more effective and fun way. Start building your community today.">
-  <meta name="keywords" content="GathSession, community, connect, projects, events, collaboration, coworking">
-  <meta name="author" content="GathSession Inc.">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="GathSession - Build your best community starting from here">
-  <meta property="og:description" content="Meet and communicate with the best people to run projects, events or other activities in a more effective and fun way.">
-  <meta property="og:image" content="images/mockup.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="GathSession - Build your best community starting from here">
-  <meta property="twitter:description" content="Meet and communicate with the best people to run projects, events or other activities in a more effective and fun way.">
-  <meta property="twitter:image" content="images/mockup.png">
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/logo_dot.png" type="image/png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,13 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=7">
-  <style>
-    .main-header,
-    .hero-section {
-      padding-right: 1rem !important;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -50,7 +23,7 @@
         
         <!-- Logo Composition -->
         <a href="#" class="logo-wrapper" id="site-logo" aria-label="GathSession Home">
-          <img src="images/logo_gath.png" alt="Gath" class="logo-gath-part">
+          <img src="images/gathsession.svg" alt="Gath" class="logo-gath-part">
         </a>
 
         <!-- Navigation Links -->
@@ -58,7 +31,7 @@
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#" class="nav-link active" id="nav-home">Home</a>
-              <img src="images/nav_line.png" alt="" class="nav-active-line" id="nav-line-indicator">
+              <img src="images/line.svg" alt="" class="nav-active-line" id="nav-line-indicator">
             </li>
             <li class="nav-item"><a href="#" class="nav-link" id="nav-features">Features</a></li>
             <li class="nav-item"><a href="#" class="nav-link" id="nav-blog">Blog</a></li>
@@ -81,7 +54,9 @@
           <div class="hero-info-column">
             
             <h1 class="hero-title" id="main-headline">
-              Build your best<br>community<br>starting from here.
+              <span>Build your best</span><br>
+              <span>community starting</span><br>
+              <span>from here.</span>
             </h1>
             
             <p class="hero-subtitle" id="main-subheadline">
@@ -93,7 +68,7 @@
                 Get Started
               </button>
               <a href="#" id="link-learn-more" class="btn-link" aria-label="Learn more about our platform">
-                Learn More 
+                <span class="btn-link-text">Learn More</span>
                 <svg class="link-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -195,7 +170,5 @@
 
   </div>
 
-  <!-- JavaScript Modules -->
-  <script type="module" src="main.js"></script>
 </body>
 </html>
